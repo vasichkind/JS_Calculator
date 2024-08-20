@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1b1b1b;
+}
+
+.phone {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  padding: 8px;
+  border: 2px solid #282828;
+  border-radius: 35px;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: #000000;
+}
+
+.top {
+  position: absolute;
+  width: 35%;
+  height: 20px;
+  top: 0px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #000000;
+}
+
+.camera {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 6px;
+  right: 15%;
+  transform: translate(50%, 0%);
+  border-radius: 50%;
+  background-color: #ffffff0c;
+}
+
+.speaker {
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  top: 8px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  border-radius: 2px;
+  background-color: #141414;
+}
+
+.phone-content {
+  height: 100%;
+  border-radius: 25px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.calculator {
+  width: 100%;
+  margin-top: 100px;
+}
+
+input {
+  width: 100%;
+  height: 100px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 40px;
+  text-align: right;
+  color: #e6e5e5;
+  background-color: transparent;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50px;
+  font-size: 25px;
+  color: #e6e5e5;
+  background-color: #313131;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #31313180;
+}
+
+#clear,
+#toggle-sign,
+#percentage {
+  color: #191919;
+  background-color: #a6a6a6;
+}
+
+#clear:hover,
+#toggle-sign:hover,
+#percentage:hover {
+  background-color: #a6a6a680;
+}
+
+.operator {
+  color: #e6e5e5;
+  background-color: #ef8e33;
+}
+
+.operator:hover {
+  color: #ef8e33;
+  background-color: #ffffff;
+}
+
+.operator-hover {
+  background-color: #ffffff;
+  color: #ef8e33;
+}
+
+.number:nth-child(17) {
+  width: 100px;
+  height: 44px;
+  text-align: start;
+  padding-left: 15px;
+}
+
+.offBtn,
+.plusVolumBtn,
+.minusVolumBtn {
+  position: absolute;
+  width: 2px;
+  height: 45px;
+  top: 20%;
+  right: -3px;
+  background-color: #343434;
+}
+
+.plusVolumBtn,
+.minusVolumBtn {
+  height: 30px;
+  left: -3px;
+  transform: scale(-1);
+}
+
+.plusVolumBtn {
+  top: 18%;
+}
+
+.minusVolumBtn {
+  top: 25%;
+}
